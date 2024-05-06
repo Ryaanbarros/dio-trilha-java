@@ -72,7 +72,7 @@ public class Operadores {
 
         boolean simNao = numero1 == numero2;
 
-        if(numero1 < numero2){
+        if(numero1 < numero2){ //se isso for true
             System.out.println("a nossa condição é verdadeira");
         } else{
             System.out.println("a nossa condição é falsa");
@@ -100,5 +100,22 @@ public class Operadores {
 
         //Ou seja, para numero podemos usar operadores relacionais e para objetos usamos equals 
 
+
+        //Operador Lógico
+        boolean condicao1 = true;
+        boolean condicao2 = false;
+        //Para operador lógico não é preciso ter as expressões booleanas já criadas, podem ser criadas outras formas na hora. exemplo abaixo.
+
+        if (condicao1 && (7 > 4 )){ //se as duas condições forem verdadeiras irá printar
+            System.out.println("as duas condições são verdadeiras");
+        }
+        if (condicao1 && condicao2){ //se as duas condições forem verdadeiras irá printar
+            System.out.println("as duas condições são verdadeiras");
+        }
+        if (condicao1 || condicao2){ //se a condicao1 OU a condicao2 for verdadeira irá printar
+            System.out.println("uma das condições é verdadeira");
+
+        System.out.println("fim");
+        }
     }
 }
