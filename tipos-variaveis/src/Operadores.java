@@ -44,5 +44,26 @@ public class Operadores {
 
         variavel = !variavel;
         System.out.println(variavel);
+
+//Exemplo de condicional usando IF/ELSE 
+
+        int a, b;
+
+        a = 5;
+        b = 6;
+        String resultado = "";
+        if(a == b)
+            resultado = "verdadeiro";
+        else
+            resultado = "falso";
+        
+        System.out.println(resultado);
+
+//Exemplo condicional usando operador TERNARIO (forma abreviada do IF/ELSE)
+        int c,d;
+        c = 4;
+        d = 4;
+        String result = c==d ?"verdadeiro" : "falso";  //lembrado que a primeira operação sempre será uma operação booleana nesse exemplo é o c==d, se isso retornaria um true ou false, e lembrando que o valor a ser retornado é string que é o mesmo da expressão condicional, se fosse int por exemplo os resultados de ? e : seriam numeros
+        System.out.println(result);
     }
 }
