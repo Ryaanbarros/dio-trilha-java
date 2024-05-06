@@ -65,5 +65,40 @@ public class Operadores {
         d = 4;
         String result = c==d ?"verdadeiro" : "falso";  //lembrado que a primeira operação sempre será uma operação booleana nesse exemplo é o c==d, se isso retornaria um true ou false, e lembrando que o valor a ser retornado é string que é o mesmo da expressão condicional, se fosse int por exemplo os resultados de ? e : seriam numeros
         System.out.println(result);
+
+//OPERADORES RELACIONAIS
+        int numero1 = 1;
+        int numero2 = 2;
+
+        boolean simNao = numero1 == numero2;
+
+        if(numero1 < numero2){
+            System.out.println("a nossa condição é verdadeira");
+        } else{
+            System.out.println("a nossa condição é falsa");
+        }
+
+
+        System.out.println("numeroUm é igual ao numeroDois? " +simNao);
+
+        simNao = numero1 != numero2;
+
+        System.out.println("numeroUm é diferente ao numeroDois? " +simNao);
+
+        simNao = numero1 > numero2;
+
+        System.out.println("numeroUm é maior que o numeroDois? " +simNao);
+
+        simNao = numero1 < numero2;
+
+        System.out.println("numeroUm é menor que o numeroDois? " +simNao);
+
+
+        String nomeUm = "Ryan";
+        String nomeDois = new String("Ryan");
+        System.out.println(nomeUm.equals(nomeDois));  //o metodo equals ele compara conteudo dos objetos se são iguais, sem o equals iria dar false por conta do new String
+
+        //Ou seja, para numero podemos usar operadores relacionais e para objetos usamos equals 
+
     }
 }
